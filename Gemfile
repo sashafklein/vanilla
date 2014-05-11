@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.0'
+
 gem 'rails', '4.0.3'
 gem 'pg'
 gem 'coffee-rails', '~> 4.0.0'
@@ -7,15 +9,15 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'haml-rails'
-gem 'rollbar'
 gem 'colorize'
 gem 'active_model_serializers'
 gem 'ahoy_matey'
 gem 'devise'
+gem 'sass-rails', '~> 4.0.0'
+gem 'cancancan'
+gem 'bootstrap-generators', '~> 3.1.1' 
 
 group :assets do 
-  gem 'bootstrap-sass'
-  gem 'sass-rails', '~> 4.0.0'
   gem 'uglifier', '>= 1.3.0'
   gem 'compass-rails'
   gem 'compass-flexbox'
@@ -23,12 +25,12 @@ end
 
 group :test do 
   gem 'rspec-rails'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '1.0.1'
   gem 'timecop'
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'selenium-webdriver'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', require: false
 end
 
 group :test, :development do 

@@ -1,0 +1,2 @@
+- flash.each do |value, msg|
+  .alert{ class: "alert#{ value == :error ? 'danger' : 'success' }" }= msg

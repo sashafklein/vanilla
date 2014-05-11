@@ -1,3 +1,4 @@
-class LandingController < ApplicationController
-  
+class LandingController < MainController
+  def show
+  end  
 end
